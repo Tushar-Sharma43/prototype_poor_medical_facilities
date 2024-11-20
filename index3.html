@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency India</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="script3.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Emergency Contacts in India</h1>
+    </header>
+
+    <!-- Emergency Section -->
+    <section class="emergency-section">
+        <h2>Emergency Services</h2>
+        <div class="emergency-cards">
+            <div class="card">
+                <h3>Police</h3>
+                <p><strong>Contact:</strong> 100</p>
+            </div>
+            <div class="card">
+                <h3>Ambulance</h3>
+                <p><strong>Contact:</strong> 108</p>
+            </div>
+            <div class="card">
+                <h3>Fire Brigade</h3>
+                <p><strong>Contact:</strong> 101</p>
+            </div>
+            <div class="card">
+                <h3>Disaster Management</h3>
+                <p><strong>Contact:</strong> 1070</p>
+            </div>
+            <div class="card">
+                <h3>Women Helpline</h3>
+                <p><strong>Contact:</strong> 1091</p>
+            </div>
+            <div class="card">
+                <h3>Child Helpline</h3>
+                <p><strong>Contact:</strong> 1098</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Profile Viewer Section -->
+    <section class="health-profile-section">
+        <h2>View Your Health Profile</h2>
+        <div class="health-profile-container">
+            <label for="aadhaar-input">Enter your Aadhaar Number:</label>
+            <input type="text" id="aadhaar-input" maxlength="12" placeholder="1234-5678-9012">
+            <button id="view-profile-btn">View Profile</button>
+        </div>
+        <div id="profile-display" class="hidden">
+            <h3>Your Health Profile</h3>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Insurance Provider:</strong> HealthPlus Pvt Ltd</p>
+            <p><strong>Last Medical Checkup:</strong> 15th September 2024</p>
+            <p><strong>Health Issues:</strong> None reported</p>
+        </div>
+    </section>
+</body>
+</html>
