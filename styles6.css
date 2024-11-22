@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+    background-color: #f4f4f9;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #3B82F6;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Back Link */
+.back-link {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 1rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Page Title */
+main h2 {
+    color: #3B82F6;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Policy List */
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    background-color: #FFEDD5;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-left: 6px solid #F97316; /* Orange accent */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    font-size: 1.2rem;
+    color: #333;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* List Items Hover Effect */
+.list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Highlight Icon */
+.list li::before {
+    content: "💼";
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #F97316; /* Matches the orange accent */
+    transition: transform 0.3s ease;
+}
+
+/* Animate Icon on Hover */
+.list li:hover::before {
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .list li {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
